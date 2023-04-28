@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pokedex/src/view/screen/home_screen.dart';
+import 'package:pokedex/src/view/screen/details_screen.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 void main() {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return ResponsiveSizer(
       builder: (context, orientation, screenType) {
         return const MaterialApp(
-          home: HomeScreen(),
+          home: DetailsScreen(),
         );
       },
     );
