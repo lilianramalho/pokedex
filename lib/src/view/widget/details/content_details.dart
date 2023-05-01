@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:pokedex/src/utils/color_util.dart';
+import 'package:pokedex/src/model/pokemon_details.dart';
 import 'package:pokedex/src/view/widget/details/ability.dart';
 import 'package:pokedex/src/view/widget/details/about.dart';
 import 'package:pokedex/src/view/widget/details/base_stats.dart';
 
 class ContentDetails extends StatelessWidget {
-  const ContentDetails({super.key});
+  const ContentDetails({super.key, required this.pokemonDetails});
+
+  final PokemonDetails? pokemonDetails;
 
   @override
   Widget build(BuildContext context) {
@@ -17,13 +19,15 @@ class ContentDetails extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(),
           child: Row(
-            children: const [
-              Ability(),
+            children:  [
+               Ability(ability: pokemonDetails!.abilities.elementAt(0).ability.name,),
             ],
           ),
         ),
-        const About(),
-        const BaseStats(),
+        About(
+          pokemonDetails: pokemonDetails,
+        ),
+        BaseStats(pokemonDetails: pokemonDetails,),
       ],
     );
   }

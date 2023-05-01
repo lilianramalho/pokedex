@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:pokedex/src/utils/color_util.dart';
 import 'package:pokedex/src/utils/font_style_util.dart';
+import 'package:pokedex/src/view/screen/details_screen.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class CustomCard extends StatelessWidget {
-  const CustomCard({super.key});
+  const CustomCard({super.key, required this.name});
+
+  final String name;
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +35,7 @@ class CustomCard extends StatelessWidget {
                 borderRadius: BorderRadius.all(Radius.circular(15)),
               ),
             ),
-            const Positioned(left: 55, child: Text("Aron" , style: FontStyleUtil.nameCard,)),
+            Positioned(left: 40, child: Text(name , style: FontStyleUtil.nameCard,)),
             Center(child: Image.asset("assets/icons/home/aron.png")),
             const Positioned(left: 100, top: 3, child: Text("#304", style: FontStyleUtil.numberCard,)),
           ],

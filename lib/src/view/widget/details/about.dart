@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:pokedex/src/model/pokemon_details.dart';
 import 'package:pokedex/src/utils/color_util.dart';
 import 'package:pokedex/src/utils/font_style_util.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class About extends StatelessWidget {
-  const About({super.key});
+  const About({super.key, required this.pokemonDetails});
+
+  final PokemonDetails? pokemonDetails;
 
   @override
   Widget build(BuildContext context) {
@@ -33,13 +36,15 @@ class About extends StatelessWidget {
                         padding: const EdgeInsets.only(right: 6),
                         child: Image.asset('assets/icons/about/weight.png'),
                       ),
-                      const Text(
-                        "6,9 kg",
+                      Text(
+                        pokemonDetails!.weight.toString(),
                         style: FontStyleUtil.characteristicsTitle,
                       ),
                     ],
                   ),
-                  const SizedBox(height: 15,),
+                  const SizedBox(
+                    height: 15,
+                  ),
                   const Text(
                     "Weight",
                     style: FontStyleUtil.characteristicsSubtitle,
@@ -54,7 +59,7 @@ class About extends StatelessWidget {
                   color: ColorUtil.gray,
                 ),
               ),
-               Column(
+              Column(
                 children: [
                   Row(
                     children: [
@@ -62,20 +67,22 @@ class About extends StatelessWidget {
                         padding: const EdgeInsets.only(right: 6),
                         child: Image.asset('assets/icons/about/straighten.png'),
                       ),
-                      const Text(
-                        "0,7 m",
+                      Text(
+                        pokemonDetails!.height.toString(),
                         style: FontStyleUtil.characteristicsTitle,
                       ),
                     ],
                   ),
-                  const SizedBox(height: 15,),
+                  const SizedBox(
+                    height: 15,
+                  ),
                   const Text(
                     "Height",
                     style: FontStyleUtil.characteristicsSubtitle,
                   ),
                 ],
               ),
-               Padding(
+              Padding(
                 padding: const EdgeInsets.only(left: 15, right: 15),
                 child: Container(
                   height: 7.h,
@@ -83,17 +90,19 @@ class About extends StatelessWidget {
                   color: ColorUtil.gray,
                 ),
               ),
-                           Column(
+              Column(
                 children: [
                   Row(
-                    children: const[
-                       Text(
+                    children: const [
+                      Text(
                         "teste",
                         style: FontStyleUtil.characteristicsTitle,
                       ),
                     ],
                   ),
-                  const SizedBox(height: 15,),
+                  const SizedBox(
+                    height: 15,
+                  ),
                   const Text(
                     "Moves",
                     style: FontStyleUtil.characteristicsSubtitle,

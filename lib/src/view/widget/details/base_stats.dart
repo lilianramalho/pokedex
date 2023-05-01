@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:pokedex/src/model/pokemon_details.dart';
 import 'package:pokedex/src/utils/color_util.dart';
 import 'package:pokedex/src/view/widget/details/percentage_stats.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class BaseStats extends StatelessWidget {
-  const BaseStats({super.key});
+  const BaseStats({super.key, required this.pokemonDetails});
+
+  final PokemonDetails? pokemonDetails;
 
   @override
   Widget build(BuildContext context) {
@@ -83,7 +86,7 @@ class BaseStats extends StatelessWidget {
                   color: ColorUtil.gray,
                 ),
               ),
-              const PercentageStats(),
+              PercentageStats(pokemonDetails: pokemonDetails,),
           ],
         ),
       ],
