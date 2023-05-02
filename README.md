@@ -15,3 +15,10 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 # pokedex
+
+Para rodar esse projeto siga as seguintes etapas: 
+
+ - clone esse repositório na sua máquina
+ - execute o comando "flutter pub get""s
+ - conecte um emulador para rodar o projeto
+ - execute o comando "flutter run"
