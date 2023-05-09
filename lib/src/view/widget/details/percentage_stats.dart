@@ -19,7 +19,7 @@ class PercentageStats extends StatelessWidget {
               width: 125,
               lineHeight: 8.0,
               percent: pokemonDetails!.stats.elementAt(0).base_stat.toDouble() / 100,
-              progressColor: ColorUtil.green,
+              progressColor: green,
               barRadius: const Radius.circular(50),
             )
           ],
@@ -31,7 +31,7 @@ class PercentageStats extends StatelessWidget {
               width: 125,
               lineHeight: 8.0,
               percent: pokemonDetails!.stats.elementAt(1).base_stat.toDouble() / 100,
-              progressColor: ColorUtil.green,
+              progressColor: green,
               barRadius: const Radius.circular(50),
             )
           ],
@@ -43,7 +43,7 @@ class PercentageStats extends StatelessWidget {
               width: 125,
               lineHeight: 8.0,
               percent: pokemonDetails!.stats.elementAt(2).base_stat.toDouble() / 100,
-              progressColor: ColorUtil.green,
+              progressColor: green,
               barRadius: const Radius.circular(50),
             )
           ],
@@ -55,7 +55,7 @@ class PercentageStats extends StatelessWidget {
               width: 125,
               lineHeight: 8.0,
               percent: pokemonDetails!.stats.elementAt(3).base_stat.toDouble() / 100,
-              progressColor: ColorUtil.green,
+              progressColor: green,
               barRadius: const Radius.circular(50),
             )
           ],
@@ -67,7 +67,7 @@ class PercentageStats extends StatelessWidget {
               width: 125,
               lineHeight: 8.0,
               percent: pokemonDetails!.stats.elementAt(4).base_stat.toDouble() / 100,
-              progressColor: ColorUtil.green,
+              progressColor: green,
               barRadius: const Radius.circular(50),
             )
           ],
@@ -79,7 +79,7 @@ class PercentageStats extends StatelessWidget {
               width: 125,
               lineHeight: 8.0,
               percent: pokemonDetails!.stats.elementAt(5).base_stat.toDouble() / 100,
-              progressColor: ColorUtil.green,
+              progressColor: green,
               barRadius: const Radius.circular(50),
             )
           ],

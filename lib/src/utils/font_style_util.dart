@@ -1,55 +1,55 @@
 import 'package:flutter/material.dart';
 import 'package:pokedex/src/utils/color_util.dart';
 
-class FontStyleUtil {
-  static const TextStyle titleAppBar = TextStyle(
-    color: ColorUtil.white,
+
+   const TextStyle titleAppBar = TextStyle(
+    color: white,
     fontSize: 24,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w700,
   );
-  static const TextStyle nameCard = TextStyle(
-    color: ColorUtil.grayDark,
+   const TextStyle nameCard = TextStyle(
+    color: grayDark,
     fontSize: 14,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
   );
-  static const TextStyle numberCard = TextStyle(
-    color: ColorUtil.grayMedium,
+   const TextStyle numberCard = TextStyle(
+    color: grayMedium,
     fontSize: 12,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
   );
-  static const TextStyle titleAppBarAbout = TextStyle(
-    color: ColorUtil.white,
+   const TextStyle titleAppBarAbout = TextStyle(
+    color: white,
     fontSize: 26,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w700,
   );
-  static const TextStyle subtitleAppBarAbout = TextStyle(
-    color: ColorUtil.white,
+   const TextStyle subtitleAppBarAbout = TextStyle(
+    color: white,
     fontSize: 16,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w700,
   );
 
-  static const TextStyle abilityText = TextStyle(
-    color: ColorUtil.white,
+   const TextStyle abilityText = TextStyle(
+    color: white,
     fontSize: 12,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w700,
   );
 
-  static const TextStyle characteristicsTitle = TextStyle(
-    color: ColorUtil.grayDark,
+   const TextStyle characteristicsTitle = TextStyle(
+    color: grayDark,
     fontSize: 12,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
   );
-  static const TextStyle characteristicsSubtitle = TextStyle(
-    color: ColorUtil.grayDark,
+   const TextStyle characteristicsSubtitle = TextStyle(
+    color: grayDark,
     fontSize: 10,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w400,
   );
-}
+

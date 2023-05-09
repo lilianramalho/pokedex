@@ -25,11 +25,11 @@ class DetailsScreen extends StatelessWidget {
           children:[
             Text(
               name,
-              style: FontStyleUtil.titleAppBarAbout,
+              style: titleAppBarAbout,
             ),
             const Text(
               "#001",
-              style: FontStyleUtil.subtitleAppBarAbout,
+              style: subtitleAppBarAbout,
             ),
           ],
         ),
@@ -45,7 +45,7 @@ class DetailsScreen extends StatelessWidget {
         }),
       ),
       extendBodyBehindAppBar: true,
-      backgroundColor: ColorUtil.green,
+      backgroundColor: green,
       body: Stack(
         alignment: AlignmentDirectional.bottomStart,
         children: [
@@ -69,7 +69,7 @@ class DetailsScreen extends StatelessWidget {
               width: 100.w,
               height: 60.h,
               decoration: const BoxDecoration(
-                color: ColorUtil.white,
+                color: white,
                 borderRadius: BorderRadius.all(Radius.circular(10)),
               ),
             ),

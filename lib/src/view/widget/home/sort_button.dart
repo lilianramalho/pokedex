@@ -10,7 +10,7 @@ class SortButton extends StatelessWidget {
       onPressed: () {},
       style: ElevatedButton.styleFrom(
         shape: const CircleBorder(),
-        backgroundColor: ColorUtil.white,
+        backgroundColor: white,
       ),
       child: Image.asset('assets/icons/geral/text_format.png'),
     );

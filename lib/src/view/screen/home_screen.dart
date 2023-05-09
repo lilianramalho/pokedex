@@ -35,9 +35,9 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ColorUtil.red,
+      backgroundColor: red,
       appBar: AppBar(
-        backgroundColor: ColorUtil.red,
+        backgroundColor: red,
         elevation: 0,
         title: Column(
           children: [
@@ -49,7 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 const Text(
                   "Pokédex",
-                  style: FontStyleUtil.titleAppBar,
+                  style: titleAppBar,
                 ),
               ],
             ),
@@ -70,7 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
             width: 97.w,
             height: 70.h,
             decoration: const BoxDecoration(
-              color: ColorUtil.white,
+              color: white,
               borderRadius: BorderRadius.all(Radius.circular(10)),
             ),
             child: Obx(

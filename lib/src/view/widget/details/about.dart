@@ -23,7 +23,7 @@ class About extends StatelessWidget {
                   fontFamily: 'Poppins',
                   fontWeight: FontWeight.w800,
                   fontSize: 16,
-                  color: ColorUtil.green),
+                  color: green),
             ),
           ),
           Row(
@@ -38,7 +38,7 @@ class About extends StatelessWidget {
                       ),
                       Text(
                         pokemonDetails!.weight.toString(),
-                        style: FontStyleUtil.characteristicsTitle,
+                        style: characteristicsTitle,
                       ),
                     ],
                   ),
@@ -47,7 +47,7 @@ class About extends StatelessWidget {
                   ),
                   const Text(
                     "Weight",
-                    style: FontStyleUtil.characteristicsSubtitle,
+                    style: characteristicsSubtitle,
                   ),
                 ],
               ),
@@ -56,7 +56,7 @@ class About extends StatelessWidget {
                 child: Container(
                   height: 7.h,
                   width: 2,
-                  color: ColorUtil.gray,
+                  color: gray,
                 ),
               ),
               Column(
@@ -69,7 +69,7 @@ class About extends StatelessWidget {
                       ),
                       Text(
                         pokemonDetails!.height.toString(),
-                        style: FontStyleUtil.characteristicsTitle,
+                        style: characteristicsTitle,
                       ),
                     ],
                   ),
@@ -78,7 +78,7 @@ class About extends StatelessWidget {
                   ),
                   const Text(
                     "Height",
-                    style: FontStyleUtil.characteristicsSubtitle,
+                    style: characteristicsSubtitle,
                   ),
                 ],
               ),
@@ -87,7 +87,7 @@ class About extends StatelessWidget {
                 child: Container(
                   height: 7.h,
                   width: 2,
-                  color: ColorUtil.gray,
+                  color: gray,
                 ),
               ),
               Column(
@@ -96,7 +96,7 @@ class About extends StatelessWidget {
                     children: const [
                       Text(
                         "teste",
-                        style: FontStyleUtil.characteristicsTitle,
+                        style: characteristicsTitle,
                       ),
                     ],
                   ),
@@ -105,7 +105,7 @@ class About extends StatelessWidget {
                   ),
                   const Text(
                     "Moves",
-                    style: FontStyleUtil.characteristicsSubtitle,
+                    style: characteristicsSubtitle,
                   ),
                 ],
               ),

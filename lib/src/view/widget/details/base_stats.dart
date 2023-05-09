@@ -21,7 +21,7 @@ class BaseStats extends StatelessWidget {
                 fontFamily: 'Poppins',
                 fontWeight: FontWeight.w800,
                 fontSize: 16,
-                color: ColorUtil.green),
+                color: green),
           ),
         ),
         Row(
@@ -34,7 +34,7 @@ class BaseStats extends StatelessWidget {
                       fontFamily: 'Poppins',
                       fontWeight: FontWeight.w800,
                       fontSize: 14,
-                      color: ColorUtil.green),
+                      color: green),
                 ),
                 Text(
                   "ATK",
@@ -42,7 +42,7 @@ class BaseStats extends StatelessWidget {
                       fontFamily: 'Poppins',
                       fontWeight: FontWeight.w800,
                       fontSize: 14,
-                      color: ColorUtil.green),
+                      color: green),
                 ),
                 Text(
                   "DEF",
@@ -50,7 +50,7 @@ class BaseStats extends StatelessWidget {
                       fontFamily: 'Poppins',
                       fontWeight: FontWeight.w800,
                       fontSize: 14,
-                      color: ColorUtil.green),
+                      color: green),
                 ),
                 Text(
                   "SATK",
@@ -58,7 +58,7 @@ class BaseStats extends StatelessWidget {
                       fontFamily: 'Poppins',
                       fontWeight: FontWeight.w800,
                       fontSize: 14,
-                      color: ColorUtil.green),
+                      color: green),
                 ),
                 Text(
                   "SDEF",
@@ -66,7 +66,7 @@ class BaseStats extends StatelessWidget {
                       fontFamily: 'Poppins',
                       fontWeight: FontWeight.w800,
                       fontSize: 14,
-                      color: ColorUtil.green),
+                      color: green),
                 ),
                 Text(
                   "SPD",
@@ -74,7 +74,7 @@ class BaseStats extends StatelessWidget {
                       fontFamily: 'Poppins',
                       fontWeight: FontWeight.w800,
                       fontSize: 16,
-                      color: ColorUtil.green),
+                      color: green),
                 ),
               ],
             ),
@@ -83,7 +83,7 @@ class BaseStats extends StatelessWidget {
                 child: Container(
                   height: 15.h,
                   width: 2,
-                  color: ColorUtil.gray,
+                  color: gray,
                 ),
               ),
               PercentageStats(pokemonDetails: pokemonDetails,),

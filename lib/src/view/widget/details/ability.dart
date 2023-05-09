@@ -14,14 +14,14 @@ class Ability extends StatelessWidget {
       width: 15.w,
       height: 3.h,
       decoration: const BoxDecoration(
-        color: ColorUtil.green,
+        color: green,
         borderRadius: BorderRadius.all(Radius.circular(50)),
       ),
       child: Center(
           child: Text(
         ability,
         textAlign: TextAlign.center,
-        style: FontStyleUtil.abilityText,
+        style: abilityText,
       )),
     );
   }

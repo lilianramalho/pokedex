@@ -15,7 +15,7 @@ class SearchField extends StatelessWidget {
         height: 4.5.h,
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(50)),
-          color: ColorUtil.white,
+          color: white,
         ),
         child: const TextField(
           autofocus: false,
@@ -23,7 +23,7 @@ class SearchField extends StatelessWidget {
             focusColor: Colors.transparent,
             icon: Icon(
               Icons.search,
-              color: ColorUtil.red,
+              color: red,
             ),
             hintText: "Search",
             border: OutlineInputBorder(
