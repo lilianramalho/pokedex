@@ -20,7 +20,7 @@ class _SplashFuturePageState extends State<SplashFuturePage> {
 
   Future<Widget> futureCall() async {
     callMethodAsync();
-    return Future.value(const HomeScreen());
+    return Future.  value(const HomeScreen());
   }
 
   Future callMethodAsync() async {

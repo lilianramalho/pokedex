@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get.dart';
 import 'package:pokedex/src/controller/pokemon_controller.dart';
 import 'package:pokedex/src/controller/pokemon_details_controller.dart';
@@ -6,35 +8,21 @@ import 'package:pokedex/src/utils/asset_util.dart';
 import 'package:pokedex/src/utils/color_util.dart';
 import 'package:pokedex/src/utils/font_style_util.dart';
 import 'package:pokedex/src/view/screen/details_screen.dart';
+import 'package:pokedex/src/view/widget/geral/loarding.dart';
 import 'package:pokedex/src/view/widget/home/custom_card.dart';
 import 'package:pokedex/src/view/widget/home/search_field.dart';
 import 'package:pokedex/src/view/widget/home/sort_button.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
-class HomeScreen extends StatefulWidget {
+class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-final PokemonController pokemonController = Get.put(PokemonController());
-final PokemonDetailsController pokemonDetailsController =
-    Get.put(PokemonDetailsController());
-
-class _HomeScreenState extends State<HomeScreen> {
-  @override
-  void initState() {
-    super.initState();
-    //callMethodAsync().then((value) {});
-  }
-
-  Future callMethodAsync() async {
-    await pokemonController.getPokemon();
-  }
-
-  @override
   Widget build(BuildContext context) {
+    final PokemonController pokemonController = Get.put(PokemonController());
+    final PokemonDetailsController pokemonDetailsController =
+        Get.put(PokemonDetailsController());
+
     return Scaffold(
       backgroundColor: red,
       appBar: AppBar(
@@ -102,7 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   .name,
                             ),
                           )))
-                  : const SizedBox(),
+                  : const Center(child:  Loarding()),
             ),
           ),
         ],
