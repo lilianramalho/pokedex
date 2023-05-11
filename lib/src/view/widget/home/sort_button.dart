@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pokedex/src/utils/asset_util.dart';
-import 'package:pokedex/src/utils/color_util.dart';
+import 'package:pokedex/src/utils/constants/asset_util.dart';
+import 'package:pokedex/src/utils/constants/color_util.dart';
 
 class SortButton extends StatelessWidget {
   const SortButton({super.key});

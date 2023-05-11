@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pokedex/src/utils/color_util.dart';
-import 'package:pokedex/src/utils/font_style_util.dart';
+import 'package:pokedex/src/utils/constants/color_util.dart';
+import 'package:pokedex/src/utils/constants/font_style_util.dart';
 import 'package:pokedex/src/view/screen/details_screen.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 

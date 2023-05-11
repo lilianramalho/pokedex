@@ -20,5 +20,4 @@ class PokemonController extends GetxController {
     next = result['next'];
     isLoarding.value = false;
   }
-
 }

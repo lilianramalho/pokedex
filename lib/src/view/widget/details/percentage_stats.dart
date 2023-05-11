@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:pokedex/src/model/pokemon_details.dart';
-import 'package:pokedex/src/utils/color_util.dart';
+import 'package:pokedex/src/utils/constants/color_util.dart';
 
 class PercentageStats extends StatelessWidget {
   const PercentageStats({super.key, required this.pokemonDetails});

@@ -12,4 +12,10 @@ class PokemonData {
       return {'error': 'falha na comunicação com servidor'};
     }
   }
+
+  getIcon() async {
+    Response response;
+    response = await dio.get('https://pokeapi.co/api/v2/pokemon/1');
+    print(response.data);
+  }
 }

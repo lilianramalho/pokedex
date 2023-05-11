@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pokedex/src/utils/color_util.dart';
+import 'package:pokedex/src/utils/constants/color_util.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class SearchField extends StatelessWidget {
