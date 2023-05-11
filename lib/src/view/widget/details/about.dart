@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pokedex/src/model/pokemon_details.dart';
+import 'package:pokedex/src/utils/asset_util.dart';
 import 'package:pokedex/src/utils/color_util.dart';
 import 'package:pokedex/src/utils/font_style_util.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
@@ -34,7 +35,7 @@ class About extends StatelessWidget {
                     children: [
                       Padding(
                         padding: const EdgeInsets.only(right: 6),
-                        child: Image.asset('assets/icons/about/weight.png'),
+                        child: Image.asset(weightIcon),
                       ),
                       Text(
                         pokemonDetails!.weight.toString(),
@@ -65,7 +66,7 @@ class About extends StatelessWidget {
                     children: [
                       Padding(
                         padding: const EdgeInsets.only(right: 6),
-                        child: Image.asset('assets/icons/about/straighten.png'),
+                        child: Image.asset(straightenIcon),
                       ),
                       Text(
                         pokemonDetails!.height.toString(),

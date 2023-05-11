@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pokedex/src/controller/pokemon_details_controller.dart';
 import 'package:pokedex/src/model/pokemon_details.dart';
+import 'package:pokedex/src/utils/asset_util.dart';
 import 'package:pokedex/src/utils/color_util.dart';
 import 'package:pokedex/src/utils/font_style_util.dart';
 import 'package:pokedex/src/view/widget/details/content_details.dart';
@@ -56,7 +57,7 @@ class DetailsScreen extends StatelessWidget {
                 image: DecorationImage(
                   alignment: Alignment.topRight,
                   image: AssetImage(
-                    'assets/icons/about/pokeball-background.png',
+                    pokeballBackgroundIcon,
                   ),
                   fit: BoxFit.scaleDown,
                 ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pokedex/src/view/screen/details_screen.dart';
 import 'package:pokedex/src/view/screen/home_screen.dart';
+import 'package:pokedex/src/view/screen/splash_screen.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 void main() {
@@ -15,8 +16,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveSizer(
       builder: (context, orientation, screenType) {
-        return const GetMaterialApp(
-          home: HomeScreen(),
+        return GetMaterialApp(
+          home: SplashFuturePage(),
         );
       },
     );

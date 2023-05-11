@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pokedex/src/controller/pokemon_controller.dart';
 import 'package:pokedex/src/controller/pokemon_details_controller.dart';
+import 'package:pokedex/src/utils/asset_util.dart';
 import 'package:pokedex/src/utils/color_util.dart';
 import 'package:pokedex/src/utils/font_style_util.dart';
 import 'package:pokedex/src/view/screen/details_screen.dart';
@@ -25,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    callMethodAsync().then((value) {});
+    //callMethodAsync().then((value) {});
   }
 
   Future callMethodAsync() async {
@@ -43,7 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             Row(
               children: [
-                Image.asset("assets/icons/geral/pokeball.png"),
+                Image.asset(logoPokeball),
                 const SizedBox(
                   width: 15,
                 ),

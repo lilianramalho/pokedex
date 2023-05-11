@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pokedex/src/utils/asset_util.dart';
 import 'package:pokedex/src/utils/color_util.dart';
 
 class SortButton extends StatelessWidget {
@@ -12,7 +13,7 @@ class SortButton extends StatelessWidget {
         shape: const CircleBorder(),
         backgroundColor: white,
       ),
-      child: Image.asset('assets/icons/geral/text_format.png'),
+      child: Image.asset(textFormatIcon),
     );
   }
 }
